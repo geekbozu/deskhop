@@ -17,7 +17,7 @@
 #define BLOCK_SIZE       512
 
 void tud_msc_inquiry_cb(uint8_t lun, uint8_t vendor_id[8], uint8_t product_id[16], uint8_t product_rev[4]) {
-    strcpy((char *)vendor_id, "DeskHop");
+    strcpy((char *)vendor_id, "KB/M");
     strcpy((char *)product_id, "Config Mode");
     strcpy((char *)product_rev, "1.0");
 }
