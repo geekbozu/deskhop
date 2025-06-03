@@ -83,8 +83,8 @@ void handle_keyboard_descriptor_values(report_val_t *src, report_val_t *dst, hid
     const int LEFT_CTRL = 0xE0;
 
     /* Constants are normally used for padding, so skip'em */
-    if (src->item_type == CONSTANT)
-        return;
+    // if (src->item_type == CONSTANT)
+    //     return;
 
     /* Detect and handle modifier keys. <= if modifier is less + constant padding? */
     if (src->size <= MODIFIER_BIT_LENGTH && src->data_type == VARIABLE) {
